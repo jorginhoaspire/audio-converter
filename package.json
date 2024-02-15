@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jorginhoaspire.github.io/audio-converter",
   "name": "nlw-expert-notes",
   "private": true,
   "version": "0.0.0",
@@ -7,6 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -28,6 +31,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "lucide-react": "^0.323.0",
     "postcss": "^8.4.34",
     "tailwind": "^4.0.0",
